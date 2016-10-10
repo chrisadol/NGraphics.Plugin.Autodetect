@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NGraphics.Plugin.Autodetect</id>
+    <version>0.0.1</version>
+    <authors>Chris Adol</authors>
+    <owners>Chris Adol</owners>
+    <licenseUrl>https://github.com/chrisadol/NGraphics.Plugin.Autodetect/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/chrisadol/NGraphics.Plugin.Autodetect</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NGraphics.Plugin.Autodetect is to enable autodection of the platform from a PCL project (i.e enable NGraphics usage directly within a Xamarin Forms PCL project)</description>
+    <releaseNotes>Original version.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>NGraphics PCL CrossPlatform SVG Xamarin XamarinForms</tags>
+    <dependencies>
+      <dependency id="NGraphics" version="0.4.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="readme.txt" target="readme.txt" />
+    <!--Core-->
+    <file src="..\NGraphics.Plugin.Autodetect\bin\Release\NGraphics.Plugin.Autodetect.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\NGraphics.Plugin.Autodetect.dll" />
+    <file src="..\NGraphics.Plugin.Autodetect\bin\Release\NGraphics.Plugin.Autodetect.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\NGraphics.Plugin.Autodetect.pdb" />
+    <!--Win Phone 8.1-->
+    <file src="..\NGraphics.Plugin.Autodetect.WinPhone\bin\Release\NGraphics.Plugin.Autodetect.dll" target="lib\wpa81\NGraphics.Plugin.Autodetect.dll" />
+    <file src="..\NGraphics.Plugin.Autodetect.WinPhone\bin\Release\NGraphics.Plugin.Autodetect.pdb" target="lib\wpa81\NGraphics.Plugin.Autodetect.pdb" />
+    <!--WinStore Windows 8.1-->
+    <file src="..\NGraphics.Plugin.Autodetect.WindowsStore\bin\Release\NGraphics.Plugin.Autodetect.dll" target="lib\win8\NGraphics.Plugin.Autodetect.dll" />
+    <file src="..\NGraphics.Plugin.Autodetect.WindowsStore\bin\Release\NGraphics.Plugin.Autodetect.pdb" target="lib\win8\NGraphics.Plugin.Autodetect.pdb" />
+    <!--Xamarin.Android-->
+    <file src="..\NGraphics.Plugin.Autodetect.Android\bin\Release\NGraphics.Plugin.Autodetect.dll" target="lib\MonoAndroid10\NGraphics.Plugin.Autodetect.dll" />
+    <file src="..\NGraphics.Plugin.Autodetect.Android\bin\Release\NGraphics.Plugin.Autodetect.pdb" target="lib\MonoAndroid10\NGraphics.Plugin.Autodetect.pdb" />
+    <!--Xamarin.iOS-->
+    <file src="..\NGraphics.Plugin.Autodetect.iOS\bin\Release\NGraphics.Plugin.Autodetect.dll" target="lib\Xamarin.iOS10\NGraphics.Plugin.Autodetect.dll" />
+    <!--UWP-->
+    <!-- not currently compatible with UWP because of the SharpDX dependency not being compatible -->
+    <!--<file src="NGraphics.Plugin.Autodetect.UWP\bin\Release\NGraphics.Plugin.Autodetect.dll" target="lib\UAP10\NGraphics.Plugin.Autodetect.dll" />    
+    <file src="NGraphics.Plugin.Autodetect.UWP\bin\Release\NGraphics.Plugin.Autodetect.pdb" target="lib\UAP10\NGraphics.Plugin.Autodetect.pdb" />-->
+  </files>
+</package>
